@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('validate') {
+    stage('run helloworld') {
       steps {
-        build 'build'
+        sh 'helloworld.sh'
       }
     }
 
